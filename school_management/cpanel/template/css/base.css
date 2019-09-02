@@ -1,0 +1,320 @@
+lable,input,textarea{
+    display:block ;
+    color:#9B7676;
+}
+body{
+	background:#000;
+	font-family:tahoma;
+	font-style:arial;
+	font-size:15px;
+        color: #fff7a1;
+}
+#wrapper{
+	width:1000px;
+	/*height:500px;*/
+	height:auto;
+	overflow:hidden;
+	/*background:#f00;*/
+	margin:130px auto;
+}
+#header{
+	width:100%;
+	height:50px;
+	/*background:#000;*/
+	padding-bottom:5px;
+	border-bottom:1px solid #696764;
+}
+#leftheader{
+	width:50%;
+	height:100%;
+        float:left;
+}
+#logo{
+	width:200px;;
+	height:100%;
+        box-shadow: 0px 5px 30px #c2bb34;
+}
+#logo img{
+	width:100%;
+	height:100%;
+}
+#logo p{font-size: 20px;color:#FFF;float: left;box-shadow: 0 0px 10px #00ffed;}
+#fifty{font-size: 50px;color: #ffea00;box-shadow: 0px 25px 80px #fff2f2;}
+#cent{font-size: 60px;color: #FFF;float: right;margin: -70px -5px 0px 0;}
+#rightheader{width:50%;height:100%;background:#1e1e1e;float:right; }
+#wellSession{float: left;margin: 15px 0px 0px 20px;width: 50%;background: #303030;height: 30px;text-align: center;line-height: 30px;color: #fff;}
+#wellSession span{text-transform:capitalize;font-family: georgia;color: #c1d500;}
+#logOut{background:#FFF;margin: 15px 150px 0px 0;width: 15%;float: right;height: 30px;text-align: center; }
+#logOut a{text-decoration:none;line-height:30px;font-family: georgia;color:#000;display:block;}
+#logOut a:hover{background:#474747;color:#fff;}
+#slideshow{
+	width:100%;
+	height:276px;
+	/*background:#E51;*/
+	margin:10px 0px;
+	border-bottom:1px solid #696764;
+	padding-bottom:5px;
+        position:relative;
+}
+#slideshow img{
+	width:100%;
+	height:100%;
+        position:absolute;
+}
+#navbar{
+	width:100%;
+	height:30px;
+	/*background:#f3f3f3;*/
+	border-bottom:1px solid #696764;
+	padding-bottom:5px;
+}
+#navbar ul{
+	
+}
+#navbar ul li{
+	display:inline;
+	padding:0px 30px 0 30px;
+	line-height:30px;
+}
+#navbar ul li a{
+        text-transform:capitalize; 
+        font-family:georgia;
+	text-decoration:none;
+	color:#696764;
+}
+#navbar ul li a:hover{
+	border-bottom:2px solid #FFF397;
+	color:#FFF397;
+	padding-bottom:9px;
+}
+#content{
+	width:100%;
+	height:auto;
+        overflow: hidden;
+	/*background:#c3c3c3;*/
+	border-bottom:1px solid #696764;
+	padding-bottom:5px;
+}
+#content p{
+	padding:50px 0px 0px 100px;
+	color:#696764;
+}
+#left_content{width:750px;height:auto;overflow:hidden;float:left;}
+#left_content p{padding:50px 0px 0px 100px;color:#696764;}
+#right_content{width:250px;height:auto;overflow:hidden;background:#1d1d1d;}
+#menue{margin:20px 10px;background:#151513;width:230px;text-transform:capitalize;}
+#menue_head{text-align:center;border-top:solid 1px #696764;width:100%;height:50px;line-height:16px;font-family:georgia;color:#FFF;}
+.list_head{width:100%;height:40px;text-align:center;border:1px solid #ad9064;box-shadow: 0px 0px 8px #ad9064;cursor:pointer; }
+.list_head h3{line-height:10px;font-size: 14px;color:#A1A19D;}
+.list{width:100%;height:auto;display:none;}
+.list ul{width:100%;padding:0px;font-family: georgia;font-style: italic;}
+.list ul li{list-style:none;}
+.list ul li a{text-decoration:none;display:block;height:30px;padding: 0 0px 0 20px;line-height: 30px;color:#FFF;}
+.list ul li a:hover{background:#FFF;color:#000;}
+#content .form{
+    
+    display:blok;
+    margin: 50px 0px 0px;
+}
+#content .form form{
+    
+} 
+.form lable{
+   margin:10px 0px;
+   font-weight:bold;
+   font-size:14px;
+   font-family:tahoma;
+   color:#65615C;  
+}
+.form input{
+   font-weight:bold;
+   width:250px;
+   height:30px;
+   font-family:tahoma;
+   color:#65615C;  
+   text-align:center; 
+}
+.form select{
+   font-weight:bold;
+   width:180px;
+   height:30px;
+   font-family:tahoma;
+   color:#65615C;
+   text-align:center; 
+}
+.form input[type='submit']{
+     margin:10px 0px;
+     
+     border:none;
+/*     width: 100px;*/
+     height: 50px;
+     background: #A55050 none repeat scroll 0% 0%;
+     color: #FFF;
+     transition: color 2s ease 0s;
+     outline: medium none;
+     font-size:12px;
+}
+.form input[type='submit']:hover{
+    background: #50053A none repeat scroll 0% 0%;
+    transition: all 2s ease 0s;
+
+}
+.input{width:180px;height:30px;}
+.textArea{width:250px;height:100px;resize:none;text-align:center; }
+#exam_day{width:35px;display:inline;color: #0c92c6;}
+#exam_month{width:35px;display:inline;color: #ea350f;}
+#exam_year{width:60px;display:inline;color: #000;}
+#exam_time{width:50px;display:inline;}
+#QA{margin:5px 0 5px 0;}
+#content table{
+    background: #363333;
+    display:blok;
+    margin: 50px 0px 0px;
+    color:#FFF;
+    width:80%;
+    border:solid 1px rgb(38, 38, 38) none repeat scroll 0% 0%;
+}
+#content table thead{
+    background: rgb(38, 38, 38) none repeat scroll 0% 0%;
+    height: 50px;
+    font-family: tahoma;
+    font-style:normal;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+#content table tbody{
+/*    background: rgb(38, 38, 38) none repeat scroll 0% 0%;*/
+    height: 30px;
+    font-family: tahoma;
+    font-style:normal;
+    font-size: 12px;
+/*    font-weight: bold;*/
+    color: #FFF;
+    text-align: center;
+}
+#content table tbody tr td{
+   padding:8px 0;
+}
+#content table tbody tr td a{
+    text-decoration:none ;
+    width:20px;
+    height:10px;
+    background: #484848 none repeat scroll 0% 0%;
+    color: #FFF;
+    padding:5px;
+    transition: color 2s ease 0s;
+}
+#content table tbody tr td img{
+    
+    width:50px;
+    height:50px;    
+}
+#content table tbody tr td a:hover{
+    background: #262424 none repeat scroll 0% 0%;
+    color:#FFF;
+/*    transition: all 2s ease 0s;*/
+}
+#content .form form table tr td input[type='checkbox']{
+    position:relative;
+    left:80px;
+    
+} 
+#content .product{
+/*    background:#FFF ;*/
+    font-style:normal;
+    margin:0 50px;
+}
+#content .product textarea{
+    color:#000;
+    font-size:12px;
+    font-family:tahoma;
+    font-style:normal ;
+    font-weight:bold;
+    width:500px;
+    height:100px;
+    resize:none;
+}
+#content .imageEdit{
+    
+    position: absolute;
+    /*right: 200px;*/
+	right: 252px;
+    top: 570px;
+    /*width: 340px;*/
+    /*height: 260px;*/
+	width: 435px;
+	height: 335px;
+    z-index: 4;
+    background:#65615C ;
+}
+#content .imageEdit img{
+    width: 100%;
+    height: 100%;
+}
+
+#statistics{width:500px;height:300px;background:#1e1e1e;}
+.statisticsRow{width:480px;height:50px;background:#151515;margin:0px 10px 40px;position: relative;top: 20;border-top:1px solid #ccc;border-bottom:1px solid #ccc;box-shadow:0px 0px 8px #FFF;}
+.statisticsRow lable{width:200px;height:100%;float:left;margin:0 200px 0 20px;line-height:50px;text-transform:capitalize;font-family:georgia;color:#ABABAB;}
+.statisticsInfo{line-height:50px;color:#FFF;}
+#footer{
+	width:100%;
+	height:50px;
+	/*background:#c6c6c6;*/
+	padding-bottom:5px;
+	border-bottom:1px solid #696764;
+	text-align:center;
+	line-height:50px;
+}
+#footer a{
+	text-decoration:none;
+	color:#696764;
+	
+	
+}
+#footer a:hover{
+	color:#FFF397;
+}
+
+
+.liberary_book{width:500px;height:150px;background:#FFF;margin:20px 0 20px 0; }
+
+.image_book{width:200px;height:100%;float:left;}
+.image_book img{width:100%;height:100%;}
+#book_title{width:300px;color:#000;font-family:georgia;text-transform:capitalize;float:right;text-align:center; }
+#book_title h4{height:30px;line-height:30px;background:#ccc;}
+#readMore{width:100px;height:30px;background:#860303;}
+#readMore a{text-decoration:none;line-height:30px;color:#FFF;}
+#book_descContent{background:#680;width:240px;height:200px;overflow:hidden;/*float:right;margin: -340px 0 0 0;*/position:relative;bottom: 510px;left: 510px; }
+#book_descContent img{width:100%;height:100%;position:absolute;}
+#con{position:absolute;width: 100%;height: 100%;text-align: center;padding-top:10px;font-size:24px}
+#loginForm{position: relative;left: 350;}
+#loginForm input{height:50px;width:300px;}
+
+//exam
+#block{}
+.questionBlock{background: #2c2c2c;color: FFF;font-size: 16px;font-family: georgia;height: 40px;line-height: 40px;box-shadow:0px 0px 8px #fff;cursor:pointer;}
+#block form{display:none;}
+#block form label{display:inline;color:#000;}
+.answerBlock{background:#7d7d7d;}
+#choice{width:500px;cursor:pointer;}
+//#choiceLabel{display:inline;}
+#choiceTitle{float:right;}
+#radio{width:13px;height:13px;cursor:pointer;}
+#block form #send{width: 100px;height: 30px;border-radius: 18px;}
+#finish{margin:15px 0 0 240px;width:200px;height:40px;background:#355A84;font-family:georgia;border: none;color: #fff;border-radius: 5px;text-transform: capitalize;font-size:18px;}
+#image_gallery_top{width:100%;height:300px;}
+#image_gallery_top img{width:100%;height:100%;}
+#image_gallery{margin:20px 0px;width:100%;height:700px;overflow:hidden;}
+.image_box{width:240px;height:200px;margin:10px 0px 10px 5px;float:left;}
+.image_box img{width:100%;height:100%;margin-bottom:5px;}
+//.right{float:right;}
+#loginImage{width:100%;height:630px;}
+#loginImage img{width:100%;height:100%;}
+#welcomeIndex{width:100%;height:auto;overflow:hidden;}
+#welcomeIndex h2{background:rgba(48, 118, 134, 0.2);height:50px;line-height:50px;color:#FFF;text-transform:capitalize;font-family:georgia;}
+#imageIndex{width:500px;height:300px;}
+#imageIndex img{width:100%;height:100%;cursor:pointer;}
+#contentIndex{width:100%;height:auto;overflow:hidden;background:#FFF;margin-top: 10px;}
+#contentIndex h3{margin:0px;padding: 3px;background:#307686;height:30px;line-height:30px;color:#000;text-transform:capitalize;font-family:georgia;}
+#contentIndex p{padding: 10px;font-family:georgia;}

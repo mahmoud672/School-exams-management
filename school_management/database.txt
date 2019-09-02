@@ -1,0 +1,108 @@
+CREATE DATABASE schoolManagement;
+USE schoolManagement;
+
+CREATE TABLE teacher(
+	id int(11) primary key auto_increment,
+	name varchar(50),
+	email varchar(50),
+	password varchar(32),
+	address text,
+	phone_number int(12),
+	register_date timestamp
+);
+CREATE TABLE student(
+	id int(11) primary key auto_increment,
+	name varchar(50),
+	email varchar(50),
+	password varchar(32),
+	address text,
+	phone_number int(12)
+
+);
+ 
+CREATE TABLE class_room(
+	id int(11) primary key auto_increment,
+	name varchar(50)
+	
+);
+
+CREATE TABLE book(
+	id int(11) primary key auto_increment,
+	title varchar(255),
+	description text,
+	image varchar(255)
+	
+);
+
+CREATE TABLE class_management(
+	id_teacher int(11),
+	id_student int(11),
+	id_class_room int(11),
+	FOREIGN KEY (id_student) REFERENCES student(id),
+	FOREIGN KEY (id_teacher) REFERENCES teacher(id),
+	FOREIGN KEY (id_class_room) REFERENCES class_room(id),
+	PRIMARY KEY (id_teacher,id_class_room,id_student)
+);
+CREATE TABLE subject(
+	id int(11) primary key auto_increment,
+	name varchar(250)
+
+);
+CREATE TABLE admin(
+	id int(11) primary key auto_increment,
+	name varchar(50),
+	email varchar(50),
+	password varchar(32),
+	address text,
+	phone_number int(12),
+	register_date timestamp
+);
+
+CREATE TABLE exam(
+    id int(11) primary key auto_increment,
+    exam_date text,
+    exam_duration int(2),
+    grade int(3),
+    id_teacher int(11),
+    id_subject int(11),
+    FOREIGN KEY (id_teacher) REFERENCES teacher(id),
+    FOREIGN KEY (id_subject) REFERENCES  subject(id)
+);
+CREATE TABLE exam_questions(
+    id int(11) primary key auto_increment,
+    title varchar(255),
+    answer varchar(255),
+    id_exam int(11),
+    FOREIGN KEY (id_exam) REFERENCES exam(id)
+);
+
+CREATE TABLE manage_question_choices(
+    id_question int(11),
+    choice varchar(255),
+    FOREIGN KEY (id_question) REFERENCES exam_questions(id),
+    PRIMARY KEY (id_question,choice)
+);
+
+CREATE TABLE grades(
+	id_student int(11),
+	id_exam int(11),
+	grade int(5),
+	FOREIGN KEY (id_student) REFERENCES student(id),
+	FOREIGN KEY (id_exam) REFERENCES  exam(id),
+	PRIMARY KEY (id_student,id_exam)
+);
+CREATE TABLE exam_sitting(
+	id_exam int(11),
+	status int(5),
+	FOREIGN KEY (id_exam ) REFERENCES exam(id),
+	PRIMARY KEY (id_exam,status)
+);
+
+
+
+
+
+
+
+
+
